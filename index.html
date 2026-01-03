@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Skill Forge 104</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="custom.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/custom.css" />
   </head>
   <body>
     <!--Navbar-->
@@ -55,30 +55,35 @@
     <section
       class="bg-dark text-light text-center text-sm-start p-5 p-lg-0 pt-lg-5 hero"
     >
-      <div class="container">
+      <div class="container hidden">
         <div class="d-sm-flex align-items-center justify-content-between">
-          <div>
+          <!-- Text -->
+          <div class="order-2 order-sm-1">
             <h1 class="text-secondary fw-bold">
               Welcome to <span class="text-primary">Skill Forge</span> - your
               collaborative learning hub.
             </h1>
+
             <p class="lead my-4">
               Working together to bring our college moto 'learning by doing' to
               life, one step at a time. Belive and Become!
             </p>
+
             <button class="btn btn-primary btn-lg">
-              <a href="#about" class="text-decoration-none">
-                <span class="text-dark">Know About Us!</span></a
-              >
+              <a href="#about" class="text-decoration-none text-dark">
+                Know About Us!
+              </a>
             </button>
           </div>
-          <div class="rounded-5 m-5">
+
+          <!-- Image -->
+          <div class="rounded-5 m-5 order-1 order-sm-2">
             <img
               src="imges/Skill Forge.png"
-              alt=""
-              class="img-fluid d-lg-block d-sm-none d-none rounded-5"
-              width="800px"
-              height="800px"
+              alt="Skill Forge"
+              class="img-fluid rounded-5"
+              width="800"
+              height="800"
             />
           </div>
         </div>
@@ -88,90 +93,49 @@
     <main data-bs-spy="scroll" data-bs-target="#navbar">
       <!-- About us page -->
       <section class="p-5 bg-secondary text-light fw-bolder" id="about">
-        <div class="container">
+        <div class="container hidden">
           <h1 class="text-primary text-center mb-5 fw-bold">
             The Idea Behind Skill Forge
           </h1>
+
           <div class="row align-items-center justify-content-between">
-            <div class="col-md text-center">
+            <!-- Image column -->
+            <div class="col-md text-center d-none d-lg-block">
               <img
                 src="imges/friends.png"
-                class="img-fluid d-lg-inline d-sm-none bg-light rounded-5 d-none me-1 px-2 mb-4"
+                class="img-fluid bg-light rounded-5 me-1 px-2 mb-4"
                 alt="Opps image broken :("
               />
             </div>
-            <div class="col-md p-2 border-start border-dark border-2 ps-4">
-              <strong
-                ><p class="lead fw-medium">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="16"
-                    height="16"
-                    fill="currentColor"
-                    class="bi bi-star-half text-dark"
-                    viewBox="0 0 16 16"
-                  >
-                    <path
-                      d="M5.354 5.119 7.538.792A.52.52 0 0 1 8 .5c.183 0 .366.097.465.292l2.184 4.327 4.898.696A.54.54 0 0 1 16 6.32a.55.55 0 0 1-.17.445l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256a.5.5 0 0 1-.146.05c-.342.06-.668-.254-.6-.642l.83-4.73L.173 6.765a.55.55 0 0 1-.172-.403.6.6 0 0 1 .085-.302.51.51 0 0 1 .37-.245zM8 12.027a.5.5 0 0 1 .232.056l3.686 1.894-.694-3.957a.56.56 0 0 1 .162-.505l2.907-2.77-4.052-.576a.53.53 0 0 1-.393-.288L8.001 2.223 8 2.226z"
-                    />
-                  </svg>
-                  &nbsp; Skill Forge began with a realization that in college,
-                  we were taught how to pass exams, but not always how to build,
-                  explore, or think like engineers. Recognizing that showed us
-                  what we needed to create for ourselves.
-                </p>
-                <p class="lead fw-medium">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="16"
-                    height="16"
-                    fill="currentColor"
-                    class="bi bi-star-half text-dark"
-                    viewBox="0 0 16 16"
-                  >
-                    <path
-                      d="M5.354 5.119 7.538.792A.52.52 0 0 1 8 .5c.183 0 .366.097.465.292l2.184 4.327 4.898.696A.54.54 0 0 1 16 6.32a.55.55 0 0 1-.17.445l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256a.5.5 0 0 1-.146.05c-.342.06-.668-.254-.6-.642l.83-4.73L.173 6.765a.55.55 0 0 1-.172-.403.6.6 0 0 1 .085-.302.51.51 0 0 1 .37-.245zM8 12.027a.5.5 0 0 1 .232.056l3.686 1.894-.694-3.957a.56.56 0 0 1 .162-.505l2.907-2.77-4.052-.576a.53.53 0 0 1-.393-.288L8.001 2.223 8 2.226z"
-                    />
-                  </svg>
-                  &nbsp; This community exists because of shared effort.
-                  Students who learned something new and chose to pass it on
-                  instead of keeping it to themselves. Every session,
-                  discussion, and resource here is shaped by that spirit.
-                </p>
-                <p class="lead fw-medium">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="16"
-                    height="16"
-                    fill="currentColor"
-                    class="bi bi-star-half text-dark"
-                    viewBox="0 0 16 16"
-                  >
-                    <path
-                      d="M5.354 5.119 7.538.792A.52.52 0 0 1 8 .5c.183 0 .366.097.465.292l2.184 4.327 4.898.696A.54.54 0 0 1 16 6.32a.55.55 0 0 1-.17.445l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256a.5.5 0 0 1-.146.05c-.342.06-.668-.254-.6-.642l.83-4.73L.173 6.765a.55.55 0 0 1-.172-.403.6.6 0 0 1 .085-.302.51.51 0 0 1 .37-.245zM8 12.027a.5.5 0 0 1 .232.056l3.686 1.894-.694-3.957a.56.56 0 0 1 .162-.505l2.907-2.77-4.052-.576a.53.53 0 0 1-.393-.288L8.001 2.223 8 2.226z"
-                    />
-                  </svg>
-                  &nbsp; Our goal is simple and collective: to walk out not just
-                  as "Graduates" but as "Engineers"! We do this by sharing what
-                  we learned to our peers and building ourselves together
-                </p>
-                <p class="lead fw-medium">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="16"
-                    height="16"
-                    fill="currentColor"
-                    class="bi bi-star-half text-dark"
-                    viewBox="0 0 16 16"
-                  >
-                    <path
-                      d="M5.354 5.119 7.538.792A.52.52 0 0 1 8 .5c.183 0 .366.097.465.292l2.184 4.327 4.898.696A.54.54 0 0 1 16 6.32a.55.55 0 0 1-.17.445l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256a.5.5 0 0 1-.146.05c-.342.06-.668-.254-.6-.642l.83-4.73L.173 6.765a.55.55 0 0 1-.172-.403.6.6 0 0 1 .085-.302.51.51 0 0 1 .37-.245zM8 12.027a.5.5 0 0 1 .232.056l3.686 1.894-.694-3.957a.56.56 0 0 1 .162-.505l2.907-2.77-4.052-.576a.53.53 0 0 1-.393-.288L8.001 2.223 8 2.226z"
-                    />
-                  </svg>
-                  &nbsp; We aim to bring the joy in building projects, working
-                  together, sharing knowledge, and much more.
-                </p>
-              </strong>
+
+            <!-- Text column -->
+            <div
+              class="col-md p-2 ps-lg-4 border-lg-start border-dark border-2"
+            >
+              <p class="lead fw-medium">
+                Skill Forge began with a realization that in college, we were
+                taught how to pass exams, but not always how to build, explore,
+                or think like engineers. Recognizing that showed us what we
+                needed to create for ourselves.
+              </p>
+
+              <p class="lead fw-medium">
+                This community exists because of shared effort. Students who
+                learned something new and chose to pass it on instead of keeping
+                it to themselves. Every session, discussion, and resource here
+                is shaped by that spirit.
+              </p>
+
+              <p class="lead fw-medium">
+                Our goal is simple and collective: to walk out not just as
+                "Graduates" but as "Engineers"! We do this by sharing what we
+                learned with our peers and building ourselves together.
+              </p>
+
+              <p class="lead fw-medium">
+                We aim to bring the joy in building projects, working together,
+                sharing knowledge, and much more.
+              </p>
             </div>
           </div>
         </div>
@@ -179,11 +143,11 @@
 
       <!-- Skills -->
       <section class="p-5 bg-dark text-light" id="skills">
-        <div class="container mt-5 mb-5">
+        <div class="container mt-5 mb-5 hidden">
           <h1 class="text-primary text-center mb-5 fw-bold">What We Explore</h1>
 
           <div
-            class="card text-center bg-dark border border-1 border-secondary text-light m-5"
+            class="card text-center bg-dark border border-1 border-secondary text-light my-5"
           >
             <div class="card-header text-primary">Special Anouncement</div>
             <div class="card-body">
@@ -194,7 +158,9 @@
                 successfully! Get you certificate and get it verified by
                 clicking the button below
               </p>
-              <a href="#" class="btn btn-secondary">Verify Certificate</a>
+              <a href="./pages/verify.html" class="btn btn-secondary"
+                >Verify Certificate</a
+              >
             </div>
           </div>
 
@@ -228,7 +194,9 @@
                       We focus on building real interfaces and writing code that
                       people can use.
                     </p>
-                    <a href="#" class="btn btn-secondary mt-auto"
+                    <a
+                      href="./pages/fullstack.html"
+                      class="btn btn-secondary mt-auto"
                       >Start Building</a
                     >
                   </div>
@@ -254,7 +222,9 @@
                       protect them. Build security awareness through practice,
                       not fear.
                     </p>
-                    <a href="#" class="btn btn-secondary mt-auto"
+                    <a
+                      href="./pages/cyber.html"
+                      class="btn btn-secondary mt-auto"
                       >Learn Security</a
                     >
                   </div>
@@ -280,7 +250,9 @@
                       maintained. We cover cloud fundamentals and automation
                       workflows.
                     </p>
-                    <a href="#" class="btn btn-secondary mt-auto"
+                    <a
+                      href="./pages/cloud.html"
+                      class="btn btn-secondary mt-auto"
                       >Explore Cloud</a
                     >
                   </div>
@@ -306,7 +278,9 @@
                       development. Learn what complements your core skills and
                       follow curiosity.
                     </p>
-                    <a href="#" class="btn btn-secondary mt-auto"
+                    <a
+                      href="./pages/extras.html"
+                      class="btn btn-secondary mt-auto"
                       >Explore More</a
                     >
                   </div>
@@ -318,7 +292,7 @@
       </section>
       <!-- Acknowledgements -->
       <section class="py-5 bg-secondary text-light" id="acknowledgements">
-        <div class="container">
+        <div class="container hidden">
           <h1 class="text-primary text-center mb-5 fw-bold">
             Those Who Made This Possible
           </h1>
@@ -372,7 +346,7 @@
 
       <!-- Contact page -->
       <section class="p-5 bg-dark" id="contact">
-        <div class="container text-light mt-5 mb-5">
+        <div class="container text-light mt-5 mb-5 hidden">
           <h1 class="text-primary text-center mb-5 fw-bold">Get Involved</h1>
           <div class="row align-items-center justify-content-between">
             <div class="col-lg text-center">
@@ -493,5 +467,6 @@
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
       crossorigin="anonymous"
     ></script>
+    <script src="scripts/animation.js"></script>
   </body>
 </html>
