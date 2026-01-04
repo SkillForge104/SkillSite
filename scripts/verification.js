@@ -3,7 +3,7 @@ const resultDiv = document.getElementById("result");
 async function verifyCertificate() {
   const input = document.getElementById("certId").value.trim().toUpperCase();
   resultDiv.classList.remove("d-none");
-  const data = await fetch("../data/certificates.json");
+  const data = await fetch("./data/certificates.json");
   const parsedData = await data.json();
 
   if (!parsedData.certificates[input]) {
